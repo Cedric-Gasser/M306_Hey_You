@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "311436587885",
+    "project_id": "hey-you-bf476",
+    "storage_bucket": "hey-you-bf476.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311436587885:android:276f7cb130213b6f2be064",
+        "android_client_info": {
+          "package_name": "io.ionic.heyyou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311436587885-mnk2nsdmd5mmpl3d99khlmqlkbi8c91v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.ionic.heyyou",
+            "certificate_hash": "a03421b0daeef2a9e2ef9d44ef165c7813970c41"
+          }
+        },
+        {
+          "client_id": "311436587885-i5lhkif6tdn1ehlhbb44qmtsqmnb5nvi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_EsySHzy4L7v40FUMF5A1PEIamkLnHow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311436587885-i5lhkif6tdn1ehlhbb44qmtsqmnb5nvi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
