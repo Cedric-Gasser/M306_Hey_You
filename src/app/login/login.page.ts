@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import '@codetrix-studio/capacitor-google-auth';
 import { Plugins } from '@capacitor/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ export class LoginPage implements OnInit {
 
   userInfo = null;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -20,6 +21,7 @@ export class LoginPage implements OnInit {
     const googleUser = await Plugins.GoogleAuth.signIn() as any;
     console.log('my user: ', googleUser);
     this.userInfo = googleUser;
+    this.router.navigateByUrl('/posts');
   }
 
 }

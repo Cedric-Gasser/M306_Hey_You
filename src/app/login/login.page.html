@@ -5,10 +5,17 @@
 </ion-header>
 
 <ion-content>
-  <ion-button (click)="doLogin()">Sign in</ion-button>
-  <ion-card>
-    <ion-card-content>
-      {{ userInfo | json}}
-    </ion-card-content>
-  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+
+        <p><span class="already">Hay, and Welcome!</span></p>
+        <p><span class="already">Gotta get back to someone who's name you don't know?</span></p>
+        <p><span class="already">There's a good chance you'll find them here on Hey-You!</span></p>
+
+
+        <ion-button expand="block" color="danger" (click)="doLogin()">Sign in with Google</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
