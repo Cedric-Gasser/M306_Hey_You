@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <ion-label>Cedric Gasser</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Tags</ion-card-title>
+      <ion-card-subtitle>
+        <div id="addTag">
+          <ion-input id="tagInput" placeholder="Enter new tag" [(ngModel)]="newTag"></ion-input>
+          <ion-button color="primary" (click)="onAddTag()"><ion-icon name="add"></ion-icon></ion-button>
+        </div>
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-chip id="tag" *ngFor="let tag of tags">
+        <ion-label>{{tag}}</ion-label>
+        <ion-icon name="close-circle" ></ion-icon>
+      </ion-chip>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

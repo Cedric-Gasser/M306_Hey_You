@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-chats',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatsPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  onBagChat(){
+    this.router.navigateByUrl('/bag-chat');
+  }
+
+  onHatChat(){
+    this.router.navigateByUrl('/hat-chat');
   }
 
 }

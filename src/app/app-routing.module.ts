@@ -21,6 +21,18 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'account',
+    loadChildren: () => import('./account/account.module').then( m => m.AccountPageModule)
+  },
+  {
+    path: 'hat-chat',
+    loadChildren: () => import('./hat-chat/hat-chat.module').then( m => m.HatChatPageModule)
+  },
+  {
+    path: 'bag-chat',
+    loadChildren: () => import('./bag-chat/bag-chat.module').then( m => m.BagChatPageModule)
   }
 ];
 @NgModule({

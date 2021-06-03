@@ -15,6 +15,10 @@ export class LoginPage implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
+    const tabs = document.querySelectorAll('ion-tab-bar');
+    Object.keys(tabs).map((key) => {
+      tabs[key].style.display = 'none';
+    });
   }
 
   async doLogin(){

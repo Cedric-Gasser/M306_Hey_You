@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from '../common/types';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-posts',
@@ -8,14 +9,16 @@ import { Post } from '../common/types';
 })
 export class PostsPage implements OnInit {
 
-  postList = {} as Post[];
-
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    const tabs = document.querySelectorAll('ion-tab-bar');
+    Object.keys(tabs).map((key) => {
+      tabs[key].style.display = 'flex';
+    });
   }
 
-  goToChat(post: Post){
-    console.log('yeet');
+  onHatChat(){
+    this.router.navigateByUrl('/hat-chat');
   }
 }
