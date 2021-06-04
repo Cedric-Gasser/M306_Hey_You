@@ -1,7 +1,6 @@
 .chat-nachrichten {
     height: calc(100% - 60px);
     overflow: scroll;
-    background-color: var(--ion-color-light-shade);
     span {
         background-color: var(--ion-color-success) !important;
         display: inline-block !important;
@@ -10,6 +9,7 @@
         border-radius: 10px !important;
         text-align: left !important;
         max-width: 240px !important;
+        color: var(--ion-color-light) !important;
     }
 }
 .chat-eingabe {
@@ -81,7 +81,7 @@
         text-align: right !important;
     }
     span {
-        color: var(--ion-color-light) !important;
+        color: var(--ion-color-dark) !important;
         background: var(--ion-color-primary) !important;
     }
 }

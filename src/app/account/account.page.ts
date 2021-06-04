@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import '@codetrix-studio/capacitor-google-auth';
 
 @Component({
   selector: 'app-account',
