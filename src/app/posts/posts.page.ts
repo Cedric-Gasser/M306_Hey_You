@@ -21,4 +21,8 @@ export class PostsPage implements OnInit {
   onHatChat(){
     this.router.navigateByUrl('/hat-chat');
   }
+
+  addPost(){
+    
+  }
 }
